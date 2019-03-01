@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars:
+     contents: "{{ lookup('file', 'pack') }}"
+  tasks:
+     - command: sudo yum install {{ contents }} -y
+       args:
+        warn: no
+             
+

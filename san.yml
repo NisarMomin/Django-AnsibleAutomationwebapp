@@ -1,0 +1,6 @@
+- hosts: machine
+  tasks:
+  - name: Insatall Package
+    yum:
+      name: nano
+      state: Present
